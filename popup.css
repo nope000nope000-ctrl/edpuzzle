@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700;800&display=swap');
 
 *,
 :after,
 :before {
     border: 0 solid #e5e7eb;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 :after,
@@ -15,8 +15,9 @@
 html {
     -webkit-text-size-adjust: 100%;
     font-feature-settings: normal;
-    font-family: Poppins, ui-sans-serif, arial;
+    font-family: Source Code Pro, ui-sans-serif, arial;
     font-variation-settings: normal;
+    font-weight: 700;
     line-height: 1.5;
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -297,7 +298,7 @@ video {
 
 .ui_button {
     --tw-bg-opacity: 1;
-    background-color: rgb(71 85 105/var(--tw-bg-opacity));
+    background-color: rgb(0 0 0/var(--tw-bg-opacity));
     border-radius: .375rem;
     font-size: 13px;
     margin-bottom: .25rem;
@@ -517,7 +518,7 @@ video {
 
 .bg-slate-800 {
     --tw-bg-opacity: 1;
-    background-color: rgb(30 41 59/var(--tw-bg-opacity))
+    background-color: rgb(64 64 64/var(--tw-bg-opacity))
 }
 
 .bg-slate-900 {
