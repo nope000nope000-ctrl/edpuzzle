@@ -3,17 +3,17 @@
 
 //this script mainly just serves to load the rest of the program
 
-var mirrors = ["https://zer0.lol"];
+var mirrors = ["https://raw.githubusercontent.com/nope000nope000-ctrl/edpuzzle/refs/heads/main"];
 
 async function try_mirror(mirror) {
-  let r = await fetch(mirror + "/edpuzzle/open.js");
+  let r = await fetch(mirror + "open.js");
   let script = await r.text();
   window.base_url = mirror;
   eval(script);
 }
 
 async function init() {
-  if (window.location.hostname == "zer0.lol") {
+  if (window.location.hostname == "https://raw.githubusercontent.com/nope000nope000-ctrl/edpuzzle/refs/heads/main") {
     alert(
       "To use this, drag this button into your bookmarks bar. Then, run it when you're on an Edpuzzle assignment."
     );
