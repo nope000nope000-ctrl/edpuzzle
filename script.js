@@ -6,7 +6,7 @@
 var mirrors = ["https://raw.githubusercontent.com/nope000nope000-ctrl/edpuzzle/refs/heads/main"];
 
 async function try_mirror(mirror) {
-  let r = await fetch(mirror + "open.js");
+  let r = await fetch(mirror + "/open.js");
   let script = await r.text();
   window.base_url = mirror;
   eval(script);
