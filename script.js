@@ -3,10 +3,10 @@
 
 //this script mainly just serves to load the rest of the program
 
-var mirrors = ["https://raw.githubusercontent.com/nope000nope000-ctrl/edpuzzle/refs/heads/main"];
+var mirrors = ["https://nope000nope000-ctrl.github.io/edpuzzle/"];
 
 async function try_mirror(mirror) {
-  let r = await fetch(mirror + "/open.js");
+  let r = await fetch(mirror + "open.js");
   let script = await r.text();
   window.base_url = mirror;
   eval(script);
